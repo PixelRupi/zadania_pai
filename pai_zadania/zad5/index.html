@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="PL" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Zadanie 5</title>
+  </head>
+  <body bgcolor="#42464d">
+
+    <p style="font-size:500%;">Liczb mniejszych od 0 to:</p>
+    <p style="font-size:500%;" id="less_0"></p>
+
+    <p style="font-size:500%;">Liczb miedzy 0 a 50 to:</p>
+    <p style="font-size:500%;" id="between0and50"></p>
+
+    <p style="font-size:500%;">Liczb wiekszych od 50 to:</p>
+    <p style="font-size:500%;" id="more_50"></p>
+
+
+
+    <script type="text/javascript">
+      let less_0 = []
+      let between0and50 = []
+      let more_50 = []
+
+        var liczba = parseInt(prompt("Podaj ilosc liczb:"));
+        for (var i = 0; i < liczba; i++) {
+          var n = parseFloat(prompt("Podaj liczbe:"));
+            if (n < 0) {
+              less_0.push(n);
+            } else if (n>=0 && n<=50) {
+              between0and50.push(n);
+            } else {
+              more_50.push(n);
+            }
+        }
+        var less = less_0.toString();
+        var bruh = between0and50.toString();
+        var more = more_50.toString();
+
+        document.getElementById("less_0").innerHTML=less;
+        document.getElementById("between0and50").innerHTML=bruh;
+        document.getElementById("more_50").innerHTML=more;
+
+    </script>
+
+  </body>
+</html>

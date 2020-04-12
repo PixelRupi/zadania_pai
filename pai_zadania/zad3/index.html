@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="PL" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Zadanie 3</title>
+  </head>
+  <body bgcolor="#42464d">
+
+    <p id="wynik"></p>
+
+
+    <script type="text/javascript">
+      let liczby = []
+      let wynik = []
+
+      var liczba = parseInt(prompt("Podaj ilosc liczb:"));
+      for (var i = 0; i < liczba; i++) {
+        var n = parseInt(prompt("Podaj liczbe:"));
+        liczby.push(n);
+
+        for (var x = 0; x < liczba; x++) {
+          var bruh = liczby[x];
+
+          var napis = "Sin, cos, tan liczby:  " + bruh + " to: " + Math.sin(bruh) + "<br>" + Math.cos(bruh) + "<br>" + Math.tan(bruh) + "<br>" + "~~~~~~~~~~~~~~~~~~~~~~~~~~" + "<br>";
+          wynik.push(napis);
+
+          console.log(napis);
+        }
+      }
+      document.getElementById("wynik").innerHTML=wynik.slice(Math.max(wynik.length - x, 0));
+    </script>
+
+
+
+
+  </body>
+</html>

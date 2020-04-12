@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="PL" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Zadanie 2</title>
+  </head>
+  <body bgcolor="#42464d">
+    <form id="formularz">
+      <input type="number" id="liczb_b">
+      <input type="button" value="Oblicz" onclick="oblicz()">
+    </form>
+
+
+
+    <script type="text/javascript">
+      function oblicz() {
+        var n = parseInt(document.getElementById('liczb_b').value);
+
+        var wynik = 0;
+        for (var i = 1; i <= n; i++) {
+          //var x = 1 / i;
+          wynik += 1 / i;
+        }
+
+        document.getElementById("wynik").innerHTML=wynik;
+      }
+    </script>
+
+    <p id="wynik"></p>
+  </body>
+</html>

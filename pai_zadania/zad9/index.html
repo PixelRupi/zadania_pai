@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="PL" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Zadanie 9</title>
+  </head>
+  <body bgcolor="#42464d">
+
+
+    <p style="font-size:500%;">Liczb parzystych jest:</p>
+    <p style="font-size:500%;" id="even"></p>
+
+    <p style="font-size:500%;">Liczb nieparzystych jest:</p>
+    <p style="font-size:500%;" id="odd"></p>
+
+    <script type="text/javascript">
+      var n_even = 0;
+      var n_odd = 0;
+
+        var liczba = parseInt(prompt("Podaj ilosc liczb:"));
+        for (var i = 0; i < liczba; i++) {
+          var n = parseFloat(prompt("Podaj liczbe:"));
+            if (n%2==0){
+              n_even += 1;
+            } else if (n%2 != 0){
+              n_odd += 1;
+            }
+        }
+
+
+        document.getElementById("even").innerHTML=n_even;
+        document.getElementById("odd").innerHTML=n_odd;
+    </script>
+
+  </body>
+</html>

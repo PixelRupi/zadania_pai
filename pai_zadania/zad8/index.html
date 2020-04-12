@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="PL" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Zadanie 8</title>
+  </head>
+  <body bgcolor="#42464d">
+
+
+    <p style="font-size:500%;"">Liczb dodatnich jest:</p>
+    <p style="font-size:500%;" id="dodatnie"></p>
+
+    <p style="font-size:500%;"">Liczb ujemnych jest:</p>
+    <p style="font-size:500%;" id="ujemne"></p>
+
+    <script type="text/javascript">
+      var n_dod = 0;
+      var n_ujemn = 0;
+
+        var liczba = parseInt(prompt("Podaj ilosc liczb:"));
+        for (var i = 0; i < liczba; i++) {
+          var n = parseFloat(prompt("Podaj liczbe:"));
+            if (n < 0){
+              n_ujemn += 1;
+            } else if (n > 0){
+              n_dod += 1;
+            }
+        }
+
+
+        document.getElementById("dodatnie").innerHTML=n_dod;
+        document.getElementById("ujemne").innerHTML=n_ujemn;
+    </script>
+
+  </body>
+</html>

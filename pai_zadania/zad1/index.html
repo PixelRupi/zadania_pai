@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="PL" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Zadanie 1</title>
+  </head>
+  <body bgcolor="#42464d">
+    <form id="formularz">
+      <input type="number" id="licznik">
+      <input type="button" value="Oblicz silnie" onclick="silnia()">
+    </form>
+
+
+
+    <script type="text/javascript">
+      function silnia() {
+        var licznik = parseInt(document.getElementById('licznik').value);
+
+        var wynik = 1;
+        var i;
+        for (i = 1; i <= licznik; i++) {
+          var wynik = wynik * i;
+        }
+
+        document.getElementById("wynik").innerHTML=wynik;
+      }
+    </script>
+
+
+
+    <p id="wynik"></p>
+  </body>
+</html>

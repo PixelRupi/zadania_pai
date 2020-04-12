@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="PL" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Zadanie 7</title>
+  </head>
+  <body bgcolor="#42464d">
+
+
+    <p style="font-size:500%;"">Suma to:</p>
+    <p style="font-size:500%;" id="suma"></p>
+
+    <p style="font-size:500%;"">Srednia to:</p>
+    <p style="font-size:500%;" id="srednia"></p>
+
+    <script type="text/javascript">
+        var suma = 0;
+
+        var liczba = parseInt(prompt("Podaj ilosc liczb:"));
+        for (var i = 0; i < liczba; i++) {
+          var n = parseFloat(prompt("Podaj liczbe:"));
+          suma += n;
+        }
+
+
+        document.getElementById("suma").innerHTML=suma;
+        var srednia = suma / n;
+        document.getElementById("srednia").innerHTML=srednia;
+    </script>
+
+  </body>
+</html>
